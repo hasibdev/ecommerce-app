@@ -1,5 +1,5 @@
 <template>
-   <div class="flex justify-between full-width q-my-sm">
+   <div class="flex justify-between full-width q-my-sm q-px-md">
       <!-- Input area -->
       <div class="input-area">
          <q-icon name="fas fa-search" color="grey-5" class="search-icon q-px-sm" />

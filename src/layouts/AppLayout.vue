@@ -2,11 +2,11 @@
    <q-page class="relative-position">
       <!-- Header -->
       <q-header class="bg-white">
-         <q-toolbar>
-            <slot name="toolbar">
-               <toolbar-one />
-            </slot>
-         </q-toolbar>
+
+         <slot name="toolbar">
+            <toolbar-one />
+         </slot>
+
       </q-header>
 
       <!-- Main Content -->
@@ -15,19 +15,16 @@
       </div>
 
       <!-- Footer -->
-      <q-footer>
-         <q-toolbar>
-            <q-toolbar-title>Footer</q-toolbar-title>
-         </q-toolbar>
-      </q-footer>
+      <app-footer />
 
    </q-page>
 </template>
 
 <script>
 import ToolbarOne from 'components/toolbars/ToolbarOne.vue'
+import AppFooter from './AppFooter.vue'
 export default {
-   components: { ToolbarOne },
+   components: { ToolbarOne, AppFooter },
    name: "app-layout",
    data() {
       return {
