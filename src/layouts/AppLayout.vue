@@ -10,7 +10,7 @@
       </q-header>
 
       <!-- Main Content -->
-      <div>
+      <div class="q-pa-md">
          <slot />
       </div>
 

@@ -1,15 +1,16 @@
 <template>
    <app-layout>
-      <img alt="Quasar logo" src="~assets/quasar-logo-vertical.svg" style="width: 200px; height: 200px">
+      <hero-slider></hero-slider>
    </app-layout>
 </template>
 
 <script>
 import AppLayout from 'layouts/AppLayout.vue'
 import { defineComponent } from 'vue'
+import HeroSlider from 'components/home/HeroSlider.vue'
 
 export default defineComponent({
-   components: { AppLayout },
+   components: { AppLayout, HeroSlider },
    name: 'PageIndex'
 })
 </script>
