@@ -28,7 +28,7 @@ export default {
    }
    .search-input {
       background-color: $grey-4;
-      padding: 13px 10px 13px 45px;
+      padding: 11px 10px 11px 45px;
       width: 100%;
       border: 0;
       border-radius: 10px;

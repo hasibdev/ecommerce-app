@@ -2,7 +2,7 @@
    <q-footer class="bg-white text-grey-9">
 
       <ul class="menu-list">
-         <li v-for="(item, i) in items" :key="i">
+         <li v-for="(item, i) in items" :key="i" @click="handleRoute(item)" :class="{active: item.active}">
             <q-icon :name="item.icon" size="25px" />
             <p class="q-mb-none">{{item.label}}</p>
          </li>
@@ -20,24 +20,35 @@ export default {
             {
                label: "Home",
                icon: "home",
-               to: '/'
+               to: '/',
+               active: true
             },
             {
                label: "My Order",
                icon: "shopping_cart",
-               to: '/cart'
+               to: '/cart',
+               active: false
+            },
+            {
+               label: "Favourite",
+               icon: "bookmark_border",
+               to: '/favourite',
+               active: false
             },
             {
                label: "Profile",
                icon: "account_circle",
-               to: '/profile'
-            },
-            {
-               label: "Profile",
-               icon: "account_circle",
-               to: '/profile'
+               to: '/profile',
+               active: false
             }
          ]
+      }
+   },
+   methods: {
+      handleRoute(item) {
+         this.$router.push(item.to)
+         this.items = this.items.map(val => ({ ...val, active: false }))
+         item.active = true
       }
    }
 }
@@ -49,12 +60,15 @@ export default {
    display: flex;
    justify-content: space-between;
    width: 100%;
-   padding: 13px 20px;
-   border-top: 0.2px solid $grey-14;
+   padding: 13px 25px;
+   border-top: 0.2px solid $grey-5;
    margin: 0;
    li {
       text-align: center;
-      // padding: 5px 10px;
+
+      &.active {
+         color: $primary;
+      }
    }
 }
 </style>
