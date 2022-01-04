@@ -1,11 +1,24 @@
 <template>
-   <div class="flex justify-between full-width q-my-sm q-px-md">
-      <!-- Input area -->
-      <div class="input-area">
-         <q-icon name="las la-search" color="grey-5" class="search-icon q-px-sm" />
-         <input class="search-input" placeholder="Search" type="text">
+   <div id="toolbar_one" class="flex justify-between items-center full-width q-my-sm q-px-md">
+      <!-- Prepend -->
+      <div class="prepend-content">
+         <slot name="prepend" />
       </div>
-      <q-btn flat round dense color="primary" icon="shopping_cart" class="q-ml-md" />
+
+      <!-- Middle Input area -->
+      <div class="middle-content">
+         <slot name="middle">
+            <q-icon name="las la-search" color="grey-5" class="search-icon q-px-sm" />
+            <input class="search-input" placeholder="Search" type="text">
+         </slot>
+      </div>
+
+      <!-- Append -->
+      <div class="append-content">
+         <slot name="append">
+            <q-btn flat round dense color="primary" icon="shopping_cart" class="q-ml-md" />
+         </slot>
+      </div>
    </div>
 </template>
 
@@ -16,27 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.input-area {
-   position: relative;
-   flex: 1;
-   .search-icon {
-      position: absolute;
-      left: 5px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 20px;
-   }
-   .search-input {
-      background-color: $grey-3;
-      padding: 11px 10px 11px 45px;
-      width: 100%;
-      border: 0;
-      border-radius: 10px;
-      font-size: 17px;
-      color: $grey-14;
-      letter-spacing: 1px;
-   }
-}
 .search-input:focus {
    outline: none;
 }

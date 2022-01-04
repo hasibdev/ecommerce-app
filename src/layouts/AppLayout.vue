@@ -1,7 +1,7 @@
 <template>
    <q-page class="relative-position">
       <!-- Header -->
-      <q-header class="bg-white">
+      <q-header class="bg-white text-grey-10">
 
          <slot name="toolbar">
             <toolbar-one />
@@ -15,7 +15,7 @@
       </div>
 
       <!-- Footer -->
-      <app-footer />
+      <app-footer v-if="footer" />
 
    </q-page>
 </template>
@@ -26,6 +26,12 @@ import AppFooter from './AppFooter.vue'
 export default {
    components: { ToolbarOne, AppFooter },
    name: "app-layout",
+   props: {
+      footer: {
+         type: Boolean,
+         default: true
+      }
+   },
    data() {
       return {
          text: ''
