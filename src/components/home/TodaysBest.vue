@@ -13,14 +13,14 @@
                   <!-- <q-btn fab color="primary" icon="shopping_cart" class="absolute" style="top: 0; right: 12px; transform: translateY(-50%);" /> -->
 
                   <div class="row no-wrap items-center">
-                     <div class="col text-h6 ellipsis">
+                     <div class="col text-h6 ellipsis text-grey-10">
                         Cafe Basilico
                      </div>
                   </div>
 
-                  <q-rating v-model="stars" :max="5" size="20px" />
+                  <q-rating v-model="stars" :max="5" size="20px" color="grey-7" />
 
-                  <p class="text-red-12 text-h5 text-bold q-mt-md">$32.50</p>
+                  <p class="text-red-12 text-h5 text-bold q-mt-sm">$32.50</p>
 
                   <!-- <q-btn outline color="orange-7" icon="las la-cart-arrow-down" label="ADD TO CART" class="full-width q-mt-lg q-py-sm" /> -->
                </q-card-section>
@@ -33,14 +33,14 @@
                   <!-- <q-btn fab color="primary" icon="shopping_cart" class="absolute" style="top: 0; right: 12px; transform: translateY(-50%);" /> -->
 
                   <div class="row no-wrap items-center">
-                     <div class="col text-h6 ellipsis">
+                     <div class="col text-h6 ellipsis text-grey-10">
                         Cafe Basilico
                      </div>
                   </div>
 
-                  <q-rating v-model="stars" :max="5" size="20px" />
+                  <q-rating v-model="stars" :max="5" size="20px" color="grey-7" />
 
-                  <p class="text-red-12 text-h5 text-bold q-mt-md">$32.50</p>
+                  <p class="text-red-12 text-h5 text-bold q-mt-sm">$32.50</p>
 
                   <!-- <q-btn outline color="orange-7" icon="las la-cart-arrow-down" label="ADD TO CART" class="full-width q-mt-lg q-py-sm" /> -->
                </q-card-section>
