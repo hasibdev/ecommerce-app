@@ -1,29 +1,35 @@
 <template>
-   <div id="home-hero">
-      <q-carousel padding navigation swipeable infinite="" v-model="slide" height="150px" transition-prev="slide-right" transition-next="slide-left" animated control-color="primary" class="rounded-borders">
-         <q-carousel-slide v-for="item in 4" :key="item" :name="item" class="column no-wrap flex-center">
-            <div class=" text-center">
-               <q-icon size="40px" name="card_membership"></q-icon>
-               <p class="letter-space-1 q-mb-sm">Example Banner</p>
-            </div>
-         </q-carousel-slide>
-
-      </q-carousel>
+   <div id="home-banner">
+      <swiper :slides-per-view="3" :space-between="50" :freeMode="true">
+         <swiper-slide>Slide 1</swiper-slide>
+         <swiper-slide>Slide 2</swiper-slide>
+         <swiper-slide>Slide 3</swiper-slide>
+         <swiper-slide>Slide 1</swiper-slide>
+         <swiper-slide>Slide 2</swiper-slide>
+         <swiper-slide>Slide 3</swiper-slide>
+      </swiper>
    </div>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import SwiperCore, { FreeMode } from 'swiper'
+// Import Swiper styles
+import 'swiper/css'
+import "swiper/css/free-mode"
+
+SwiperCore.use(FreeMode)
+
 export default {
-   data() {
-      return {
-         slide: 1
-      }
+   components: {
+      Swiper,
+      SwiperSlide
    }
 }
 </script>
 
 <style lang="scss">
-#home-hero {
+#home-banner {
    .q-carousel__navigation-icon--inactive {
       opacity: 0.5 !important;
    }
