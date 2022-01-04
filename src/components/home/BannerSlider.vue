@@ -1,15 +1,12 @@
 <template>
-   <div id="home-banner">
-      <swiper :slides-per-view="1.3" :space-between="0" :freeMode="true">
+   <div id="home-banner" class="q-mt-md">
+      <swiper :slides-per-view="4" :pagination="true" :space-between="10">
          <swiper-slide v-for="(item, i) in items" :key="i">
-            <div class="row">
-               <q-icon :name="item.icon" color="primary" size="35px" class="col-2" />
-               <div class="col-10 ">
-                  <div class="q-ml-sm">
-                     <h6>{{item.title}}</h6>
-                     <p>{{item.subtitle}}</p>
-                  </div>
+            <div class="text-center q-pb-xl">
+               <div class="q-pa-md border-1 round-10 inline-block">
+                  <q-icon :name="item.icon" color="blue-10" size="30px" />
                </div>
+               <p class="q-mt-md">{{ item.title }}</p>
             </div>
          </swiper-slide>
       </swiper>
@@ -17,12 +14,15 @@
 </template>
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import SwiperCore, { FreeMode } from 'swiper'
+import SwiperCore, {
+   Pagination
+} from 'swiper'
+
+// install Swiper modules
+SwiperCore.use([Pagination])
 // Import Swiper styles
 import 'swiper/css'
-import "swiper/css/free-mode"
-
-SwiperCore.use(FreeMode)
+import "swiper/css/pagination"
 
 export default {
    components: {
@@ -32,10 +32,14 @@ export default {
    data() {
       return {
          items: [
-            { title: "Payment & Delivery", subtitle: 'Free shipping for orders over $50', icon: 'las la-truck' },
-            { title: "Return & Refund", subtitle: 'Free 100% money back guarantee', icon: 'las la-spinner' },
-            { title: "Quality Support", subtitle: 'Alway online feedback 24/7', icon: 'las la-life-ring' },
-            { title: "JOIN OUR NEWSLETTER", subtitle: '10% off by subscribing to our newsletter', icon: 'las la-envelope' }
+            { title: "Handphone", icon: 'las la-truck' },
+            { title: "TV", icon: 'las la-spinner' },
+            { title: "Headphone", icon: 'las la-life-ring' },
+            { title: "Gaming", icon: 'las la-envelope' },
+            { title: "Handphone", icon: 'las la-truck' },
+            { title: "TV", icon: 'las la-spinner' },
+            { title: "Headphone", icon: 'las la-life-ring' },
+            { title: "Gaming", icon: 'las la-envelope' }
          ]
       }
    }

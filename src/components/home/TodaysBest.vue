@@ -1,6 +1,6 @@
 <template>
    <div>
-      <h5 class="q-my-lg">Today's Best Deal</h5>
+      <h5 class="q-mb-lg">Today's Best Deal</h5>
 
       <div class="row">
          <div class="col">

@@ -3,11 +3,9 @@
       <hero-slider />
 
       <br>
-
       <banner-slider />
 
       <br>
-
       <todays-best />
 
    </app-layout>
@@ -17,11 +15,25 @@
 import AppLayout from 'layouts/AppLayout.vue'
 import { defineComponent } from 'vue'
 import HeroSlider from 'components/home/HeroSlider.vue'
-import BannerSlider from 'components/home/BannerSlider.vue'
 import TodaysBest from 'components/home/TodaysBest.vue'
+import BannerSlider from 'components/home/BannerSlider.vue'
 
 export default defineComponent({
-   components: { AppLayout, HeroSlider, BannerSlider, TodaysBest },
-   name: 'PageIndex'
+   name: 'PageIndex',
+   components: { AppLayout, BannerSlider, TodaysBest, HeroSlider },
+   data() {
+      return {
+         heroSlider: null,
+         loading: false
+      }
+   },
+   async created() {
+      try {
+         const sliders = await this.$api.get('/sliders')
+         console.log(sliders)
+      } catch (error) {
+         console.log(error)
+      }
+   }
 })
 </script>
