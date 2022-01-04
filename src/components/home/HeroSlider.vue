@@ -1,6 +1,6 @@
 <template>
    <div id="home-hero">
-      <q-carousel navigation swipeable infinite v-model="slide" height="250px" transition-prev="slide-right" transition-next="slide-left" animated control-color="grey-10" class="rounded-borders">
+      <q-carousel navigation swipeable infinite v-model="slide" height="230px" transition-prev="slide-right" transition-next="slide-left" animated control-color="grey-10" class="rounded-borders">
 
          <q-carousel-slide v-for="(item, i) in items" :key="i" :name="i" :img-src="item.image" class="column no-wrap  ">
             <div class="q-mt-md">
@@ -71,13 +71,13 @@ export default {
       }
    }
    .q-carousel__navigation--bottom {
-      bottom: 35px;
+      bottom: 15px;
    }
    .q-carousel__navigation-icon--active {
       color: #000 !important;
    }
    .under-bottom {
-      margin-top: -30px;
+      margin-top: -10px;
       background: #fff;
       position: relative;
       z-index: 9;
