@@ -12,7 +12,7 @@
 
       </q-carousel>
 
-      <div class="under-bottom q-pa-md round-10">
+      <div class="under-bottom q-pa-md round-10 custom-shadow">
          <div class="row">
             <div class="col">
                <div class="flex items-center">
@@ -81,7 +81,6 @@ export default {
       background: #fff;
       position: relative;
       z-index: 9;
-      box-shadow: 0px 8px 15px #ddd;
    }
 }
 </style>
