@@ -51,8 +51,13 @@ export default {
    .q-carousel__navigation-icon--inactive {
       opacity: 0.5 !important;
    }
-   // .q-carousel__navigation-icon--active {
-   //    color: red !important;
-   // }
+   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+   .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      margin: 0 8px;
+   }
+   .swiper-pagination-bullet-active {
+      background-color: $grey-10;
+   }
 }
 </style>
