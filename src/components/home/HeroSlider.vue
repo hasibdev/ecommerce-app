@@ -17,7 +17,7 @@
             <div class="col">
                <div class="flex items-center">
                   <div class="q-pa-sm round-10 bg-blue-1">
-                     <q-icon name="las la-wallet text-blue-10" size="30px" />
+                     <q-icon name="las la-wallet text-primary" size="30px" />
                   </div>
                   <div class="q-ml-sm">
                      <h6>$4,899</h6>
@@ -28,7 +28,7 @@
             <div class="col">
                <div class="flex items-center">
                   <div class="q-pa-sm round-10 bg-cyan-1">
-                     <q-icon name="las la-ticket-alt text-cyan-10" size="30px" />
+                     <q-icon name="las la-ticket-alt text-secondary" size="30px" />
                   </div>
                   <div class="q-ml-sm">
                      <h6>12</h6>

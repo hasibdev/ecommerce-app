@@ -32,14 +32,13 @@ export default {
    data() {
       return {
          items: [
-            { title: "Handphone", icon: 'las la-truck' },
-            { title: "TV", icon: 'las la-spinner' },
-            { title: "Headphone", icon: 'las la-life-ring' },
-            { title: "Gaming", icon: 'las la-envelope' },
-            { title: "Handphone", icon: 'las la-truck' },
-            { title: "TV", icon: 'las la-spinner' },
-            { title: "Headphone", icon: 'las la-life-ring' },
-            { title: "Gaming", icon: 'las la-envelope' }
+            { title: "Handphone", icon: 'las la-mobile' },
+            { title: "TV", icon: 'las la-tv' },
+            { title: "Headphone", icon: 'las la-headphones' },
+            { title: "Gaming", icon: 'las la-gamepad' },
+            { title: "Handphone", icon: 'las la-mobile' },
+            { title: "TV", icon: 'las la-tv' },
+            { title: "Headphone", icon: 'las la-headphones' }
          ]
       }
    }
