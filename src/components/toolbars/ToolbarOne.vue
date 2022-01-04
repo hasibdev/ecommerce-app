@@ -2,7 +2,7 @@
    <div class="flex justify-between full-width q-my-sm q-px-md">
       <!-- Input area -->
       <div class="input-area">
-         <q-icon name="fas fa-search" color="grey-5" class="search-icon q-px-sm" />
+         <q-icon name="las la-search" color="grey-5" class="search-icon q-px-sm" />
          <input class="search-input" placeholder="Search" type="text">
       </div>
       <q-btn flat round dense color="primary" icon="shopping_cart" class="q-ml-md" />

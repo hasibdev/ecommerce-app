@@ -20,7 +20,7 @@
 
                   <p class="text-red-12 text-h5 text-bold q-mt-md">$32.50</p>
 
-                  <q-btn outline color="orange-7" icon="fas fa-cart-arrow-down" label="ADD TO CART" class="full-width q-mt-lg q-py-sm" />
+                  <q-btn outline color="orange-7" icon="las la-cart-arrow-down" label="ADD TO CART" class="full-width q-mt-lg q-py-sm" />
                </q-card-section>
             </q-card>
          </div>
