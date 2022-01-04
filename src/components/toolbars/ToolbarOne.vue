@@ -9,7 +9,7 @@
       <div class="middle-content">
          <slot name="middle">
             <q-icon name="las la-search" color="grey-5" class="search-icon q-px-sm" />
-            <input class="search-input" placeholder="Search" type="text">
+            <input @focus="openSearchView" class="search-input" placeholder="Search" type="text">
          </slot>
       </div>
 
