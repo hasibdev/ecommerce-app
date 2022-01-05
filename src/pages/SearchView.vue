@@ -38,7 +38,7 @@
 
                   <q-item-section>
                      <q-item-label>
-                        <h6 class="">Headphone Joss</h6>
+                        <p class="text-body1 text-bold">Headphone Joss</p>
                      </q-item-label>
                   </q-item-section>
 
@@ -66,7 +66,7 @@
 
                   <q-item-section>
                      <q-item-label>
-                        <h6 class="">Headphone Joss</h6>
+                        <p class="text-body1 text-bold">Headphone Joss</p>
                      </q-item-label>
                   </q-item-section>
 
