@@ -42,7 +42,8 @@ export default {
       BackBtn
    },
    methods: {
-      openSearchView() {
+      openSearchView(e) {
+         e.preventDefault()
          this.$router.push('/search-view')
       }
    }
