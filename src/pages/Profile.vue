@@ -25,6 +25,50 @@
 
       </div>
 
+      <!-- List -->
+      <div class="q-mt-lg">
+         <q-list class="rounded-borders">
+            <q-expansion-item icon="las la-user-circle" label="My Profile">
+               <q-card>
+                  <q-card-section>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
+                     commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
+                     eveniet doloribus ullam aliquid.
+                  </q-card-section>
+               </q-card>
+            </q-expansion-item>
+            <q-expansion-item icon="las la-map-marker" label="My Address">
+               <q-card>
+                  <q-card-section>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
+                     commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
+                     eveniet doloribus ullam aliquid.
+                  </q-card-section>
+               </q-card>
+            </q-expansion-item>
+            <q-expansion-item icon="las la-bell" label="Notification">
+               <q-card>
+                  <q-card-section>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
+                     commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
+                     eveniet doloribus ullam aliquid.
+                  </q-card-section>
+               </q-card>
+            </q-expansion-item>
+            <q-expansion-item icon="gpp_good" label="Help Center">
+               <q-card>
+                  <q-card-section>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
+                     commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
+                     eveniet doloribus ullam aliquid.
+                  </q-card-section>
+               </q-card>
+            </q-expansion-item>
+            <!-- <q-expansion-item icon="logout" label="Logout" expand-icon="las la-circle" expanded-icon="las la-circle"> </q-expansion-item> -->
+            <q-expansion-item icon="logout" label="Logout" expand-icon-class="hidden"> </q-expansion-item>
+         </q-list>
+      </div>
+
    </app-layout>
 </template>
 
