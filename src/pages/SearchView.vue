@@ -29,7 +29,7 @@
             </div>
             <!-- List -->
             <q-list>
-               <q-item v-for="(item, i) in 3" :key="i" clickable v-ripple class="q-my-sm round-10" :class="{'custom-shadow': i==0}">
+               <q-item v-for="(item, i) in 3" :key="i" clickable v-ripple class="q-my-sm round-10 bg-white" :class="{'custom-shadow': i==0}">
                   <q-item-section avatar>
                      <q-avatar rounded color="transparent" text-color="white">
                         <q-img class="rounded-borders" src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
@@ -57,7 +57,7 @@
             </div>
             <!-- List -->
             <q-list>
-               <q-item v-for="item in 3" :key="item" dense class="q-my-sm" clickable v-ripple>
+               <q-item v-for="item in 3" :key="item" class="q-my-sm round-10 bg-white" clickable v-ripple>
                   <q-item-section avatar>
                      <q-avatar rounded color="transparent" text-color="white">
                         <q-img class="rounded-borders" src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
