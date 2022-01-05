@@ -1,5 +1,5 @@
 <template>
-   <div class="fullscreen bg-primary text-white text-center q-pa-md flex flex-center">
+   <div class="fullscreen body-bg text-center q-pa-md flex flex-center">
       <div>
          <div style="">
             <h6>404</h6>
@@ -9,7 +9,7 @@
             <h5>Oops. Nothing here...</h5>
          </div>
 
-         <q-btn class="q-mt-xl" color="white" text-color="blue" unelevated to="/" label="Go Home" no-caps />
+         <q-btn class="q-mt-xl" color="primary" unelevated to="/" label="Go Home" no-caps />
       </div>
    </div>
 </template>
