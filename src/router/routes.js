@@ -5,7 +5,8 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path: 'search-view', component: () => import('pages/SearchView.vue') }
+      { path: 'search-view', component: () => import('pages/SearchView.vue') },
+      { path: 'categories/:id', component: () => import('pages/categories/details.vue') }
     ]
   },
 

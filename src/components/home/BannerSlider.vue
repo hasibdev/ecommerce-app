@@ -2,7 +2,7 @@
    <div id="home-banner" class="q-mt-md">
       <swiper :slides-per-view="4" :pagination="{ 'clickable': true }" :space-between="10">
          <swiper-slide v-for="(item, i) in items" :key="i">
-            <div class="text-center q-pb-xl">
+            <div @click="$router.push(`/categories/${i}`)" class="text-center q-pb-xl">
                <div class="q-pa-md border-1 round-10 inline-block">
                   <q-icon :name="item.icon" color="blue-10" size="30px" />
                </div>

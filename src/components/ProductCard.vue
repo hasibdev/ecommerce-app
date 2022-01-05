@@ -13,7 +13,7 @@
             <span class="" style="font-size: 10px;">{{ reviews }} Reviews</span>
          </div>
 
-         <p class="text-h6 text-bold q-mt-sm">{{ price }}</p>
+         <p class="text-h6 text-bold q-mt-sm">${{ price }}</p>
 
       </q-card-section>
    </q-card>
