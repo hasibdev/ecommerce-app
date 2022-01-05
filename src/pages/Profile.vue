@@ -9,10 +9,22 @@
       </template>
       <div class="text-center">
          <q-avatar size="150px">
-            <img src="https://cdn.quasar.dev/img/avatar.png">
+            <img :src="require('assets/images/user-04.png')">
          </q-avatar>
-         <h6 class="q-mt-lg">John Doe</h6>
+         <h6 class="q-mt-lg">Jane Doe</h6>
       </div>
+
+      <div class="flex items-center q-mt-lg custom-shadow q-px-md q-py-sm round-10">
+         <div class="q-pa-sm round-10 bg-blue-1">
+            <q-icon name="las la-wallet text-primary" size="30px" />
+         </div>
+         <div class="q-ml-sm">
+            <h6>$4,899</h6>
+            <p>Balance</p>
+         </div>
+
+      </div>
+
    </app-layout>
 </template>
 
