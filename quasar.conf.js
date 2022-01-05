@@ -78,7 +78,7 @@ module.exports = configure(function (ctx) {
       server: {
         type: 'http'
       },
-      port: 8080,
+      port: process.env.PORT || 8080,
       open: false // opens browser window automatically
     },
 
