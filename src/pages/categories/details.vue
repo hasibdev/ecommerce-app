@@ -17,6 +17,14 @@
          </toolbar-one>
       </template>
 
+      <div id="category_slider">
+         <swiper :slides-per-view="3.5" :freeMode="true" :mousewheel="true" :space-between="5">
+            <swiper-slide v-for="(item, i) in items" :key="i">
+               <p class="text-item" :class="{active: i==0}">{{ item.title }}</p>
+            </swiper-slide>
+         </swiper>
+      </div>
+
       <!-- Results -->
       <div class="row q-col-gutter-md q-mt-md">
          <div class="col-6" v-for="item in 4" :key="item">
@@ -28,16 +36,45 @@
 </template>
 
 <script>
+
 import AppLayout from 'layouts/AppLayout.vue'
 import ToolbarOne from 'components/toolbars/ToolbarOne.vue'
 import BackBtn from 'components/buttons/BackBtn.vue'
 import ProductCard from 'components/ProductCard'
+
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
 export default {
    components: {
-      AppLayout, ToolbarOne, BackBtn, ProductCard
+      AppLayout, ToolbarOne, BackBtn, ProductCard, Swiper, SwiperSlide
+   },
+   data() {
+      return {
+         items: [
+            { title: "Handphone", icon: 'las la-mobile' },
+            { title: "Gaming", icon: 'las la-gamepad' },
+            { title: "TV", icon: 'las la-tv' },
+            { title: "Headphone", icon: 'las la-headphones' },
+            { title: "Gaming", icon: 'las la-gamepad' },
+            { title: "TV", icon: 'las la-tv' },
+            { title: "Headphone", icon: 'las la-headphones' }
+         ]
+      }
    }
 }
 </script>
 
 <style lang="scss" scoped>
+#category_slider {
+   .text-item {
+      color: $primary;
+      text-align: center;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+      border-radius: 18px;
+      &.active {
+         border-color: $primary;
+      }
+   }
+}
 </style>

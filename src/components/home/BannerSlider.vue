@@ -1,6 +1,6 @@
 <template>
    <div id="home-banner" class="q-mt-md">
-      <swiper :slides-per-view="4" :pagination="{ 'clickable': true }" :space-between="10">
+      <swiper :slides-per-view="4" :pagination="{ 'clickable': true }" :mousewheel="true" :space-between="10">
          <swiper-slide v-for="(item, i) in items" :key="i">
             <div @click="$router.push(`/categories/${i}`)" class="text-center q-pb-xl">
                <div class="q-pa-md border-1 round-10 inline-block">
@@ -14,12 +14,7 @@
 </template>
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import SwiperCore, {
-   Pagination
-} from 'swiper'
 
-// install Swiper modules
-SwiperCore.use([Pagination])
 // Import Swiper styles
 import 'swiper/css'
 import "swiper/css/pagination"
