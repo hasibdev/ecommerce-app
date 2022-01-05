@@ -1,6 +1,6 @@
 <template>
    <div id="home-hero">
-      <q-carousel navigation swipeable infinite v-model="slide" height="230px" transition-prev="slide-right" transition-next="slide-left" animated control-color="grey-10" class="rounded-borders">
+      <q-carousel navigation autoplay swipeable infinite v-model="slide" height="230px" transition-prev="slide-right" transition-next="slide-left" animated control-color="grey-10" class="rounded-borders">
 
          <q-carousel-slide v-for="(item, i) in items" :key="i" :name="i" :img-src="item.image" class="column no-wrap  ">
             <div class="q-mt-md">
@@ -45,7 +45,7 @@
 export default {
    data() {
       return {
-         slide: 1,
+         slide: 0,
          items: [
             { title: 'Collection! Air More Uptempo', subtitle: 'New Arivals', image: 'http://phplaravel-692081-2338552.cloudwaysapps.com/storage/media/GQ6ry3XUj0akdpG1E1efXJDzoKSHX0UU6eR9bQeH.jpeg' },
             { title: 'Collection! Air More Uptempo', subtitle: 'New Arivals', image: 'http://phplaravel-692081-2338552.cloudwaysapps.com/storage/media/GQ6ry3XUj0akdpG1E1efXJDzoKSHX0UU6eR9bQeH.jpeg' },

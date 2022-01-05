@@ -3,15 +3,19 @@
       <!-- Toolbar -->
       <template #toolbar>
          <toolbar-one>
+            <template #prepend>
+               <q-icon @click="$router.back()" name="las la-angle-left" color="primary" size="25px" class="q-pr-sm" />
+            </template>
+
             <template #middle>
                <div class="text-center">
                   <q-icon name="las la-search" color="grey-5" class="search-icon q-px-sm" />
                   <input v-model="searchText" class="search-input" placeholder="Search" type="text">
                </div>
             </template>
-            <template #append>
+            <!-- <template v-if="!searchText" #append>
                <p @click="$router.back()" class="q-pl-md">Cancle</p>
-            </template>
+            </template> -->
          </toolbar-one>
       </template>
 
@@ -107,7 +111,7 @@ export default {
    },
    data() {
       return {
-         searchText: 'ab'
+         searchText: ''
       }
    },
    mounted() {
