@@ -3,7 +3,7 @@
       <template #toolbar>
          <toolbar-one>
             <template #middle>
-               <p class="text-center text-body1 text-bold">Profile</p>
+               <p class="text-center text-body1 text-bold q-ml-lg">Profile</p>
             </template>
          </toolbar-one>
       </template>
@@ -23,10 +23,12 @@
             <p>Balance</p>
          </div>
 
+         <q-btn class="q-ml-auto" rounded unelevated color="primary">Top Up</q-btn>
+
       </div>
 
       <!-- List -->
-      <div class="q-mt-lg">
+      <div id="profile_expansion" class="q-mt-lg">
          <q-list class="rounded-borders">
             <q-expansion-item icon="las la-user-circle" label="My Profile">
                <q-card>
@@ -64,7 +66,6 @@
                   </q-card-section>
                </q-card>
             </q-expansion-item>
-            <!-- <q-expansion-item icon="logout" label="Logout" expand-icon="las la-circle" expanded-icon="las la-circle"> </q-expansion-item> -->
             <q-expansion-item icon="logout" label="Logout" expand-icon-class="hidden"> </q-expansion-item>
          </q-list>
       </div>
@@ -83,4 +84,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#profile_expansion {
+   .q-item__section.q-item__section--avatar {
+      align-items: center !important;
+   }
+}
 </style>
