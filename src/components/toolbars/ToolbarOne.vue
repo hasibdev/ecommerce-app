@@ -16,7 +16,7 @@
       <!-- Append -->
       <div class="append-content">
          <slot name="append">
-            <q-btn flat round dense color="primary" icon="shopping_cart" class="q-ml-md" />
+            <q-btn flat round dense color="primary" icon="las la-shopping-cart" class="q-ml-md" />
          </slot>
       </div>
    </div>

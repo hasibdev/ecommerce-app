@@ -1,15 +1,15 @@
 <template>
-  <q-layout view="hHh lpR fFf">
+   <q-layout view="hHh lpR fFf">
 
-    <q-page-container>
-      <router-view />
-    </q-page-container>
+      <q-page-container>
+         <router-view />
+      </q-page-container>
 
-  </q-layout>
+   </q-layout>
 </template>
 
 <script>
 export default {
-  name: "Layout"
+   name: "Layout"
 }
 </script>
