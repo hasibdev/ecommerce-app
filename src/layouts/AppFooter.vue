@@ -1,5 +1,5 @@
 <template>
-   <q-footer class="bg-white text-grey-9">
+   <q-footer id="app_footer" class="bg-white text-grey-9">
 
       <ul class="menu-list">
          <li v-for="(item, i) in items" :key="i" @click="handleRoute(item)" :class="{active: item.active}">
@@ -70,5 +70,8 @@ export default {
          color: $primary;
       }
    }
+}
+#app_footer {
+   bottom: -1px;
 }
 </style>

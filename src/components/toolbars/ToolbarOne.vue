@@ -9,7 +9,7 @@
       <div class="middle-content">
          <slot name="middle">
             <q-icon name="las la-search" color="grey-5" class="search-icon q-px-sm" />
-            <input @focus="openSearchView" class="search-input" placeholder="Search" type="text">
+            <input @click="openSearchView" @focus="openSearchView" class="search-input" placeholder="Search" type="text">
          </slot>
       </div>
 
@@ -24,12 +24,13 @@
 
 <script>
 export default {
-
+   methods: {
+      openSearchView() {
+         this.$router.push('/search-view')
+      }
+   }
 }
 </script>
 
 <style lang="scss" scoped>
-.search-input:focus {
-   outline: none;
-}
 </style>
