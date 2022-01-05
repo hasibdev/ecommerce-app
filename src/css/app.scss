@@ -3,6 +3,10 @@
 
 body {
    font-family: 'Poppins', 'Roboto';
+   background-color: $body-bg;
+}
+.body-bg {
+   background-color: $body-bg;   
 }
 
 // app global css in SCSS form
@@ -24,7 +28,7 @@ input:focus {
 }
 
 .border-1 {
-   border: 1px solid $grey-3;
+   border: 1px solid $grey-4;
 }
 .custom-shadow {
    box-shadow: 0px 7px 15px #ddd;

@@ -76,22 +76,38 @@
 
       <!-- Search Results -->
       <div v-else>
+         <div class="flex justify-between items-center">
+            <p class="text-body1">Best Match
+               <q-icon name="las la-angle-down" />
+            </p>
+            <div>
+               <q-icon name="las la-bars" size="25px" class="text-bold" />
+               <q-icon name="las la-sliders-h" size="25px" class="text-bold q-ml-sm" />
+            </div>
+         </div>
 
+         <!-- Results -->
+         <div class="row q-col-gutter-md q-mt-md">
+            <div class="col-6" v-for="item in 4" :key="item">
+               <product-card name="Cafe Basilico" price="$32.50" star="3.5" reviews="1259" image="https://cdn.quasar.dev/img/chicken-salad.jpg" />
+            </div>
+         </div>
       </div>
 
    </app-layout>
 </template>
 
 <script>
+import ProductCard from 'components/ProductCard'
 import AppLayout from 'layouts/AppLayout.vue'
 import ToolbarOne from 'components/toolbars/ToolbarOne.vue'
 export default {
    components: {
-      AppLayout, ToolbarOne
+      AppLayout, ToolbarOne, ProductCard
    },
    data() {
       return {
-         searchText: ''
+         searchText: 'ab'
       }
    },
    mounted() {

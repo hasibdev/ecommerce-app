@@ -7,36 +7,17 @@
 
       <div class="row q-col-gutter-md">
          <div class="col-6" v-for="item in 4" :key="item">
-            <q-card class="custom-shadow">
-               <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
-               <q-card-section>
-                  <div class="row no-wrap items-center">
-                     <div class="col text-h6 ellipsis text-grey-10">
-                        Cafe Basilico
-                     </div>
-                  </div>
-
-                  <div class="flex justify-between">
-                     <q-rating v-model="stars" :max="5" size="13px" color="secondary" />
-                     <span class="" style="font-size: 10px;">1259 Reviews</span>
-                  </div>
-
-                  <p class="text-h6 text-bold q-mt-sm">$32.50</p>
-
-               </q-card-section>
-            </q-card>
+            <product-card name="Cafe Basilico" price="$32.50" star="3.5" reviews="1259" image="https://cdn.quasar.dev/img/chicken-salad.jpg" />
          </div>
-
       </div>
    </div>
 </template>
 
 <script>
+import ProductCard from 'components/ProductCard'
 export default {
-   data() {
-      return {
-         stars: 3
-      }
+   components: {
+      ProductCard
    }
 }
 </script>

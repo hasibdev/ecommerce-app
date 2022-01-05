@@ -1,7 +1,7 @@
 <template>
    <q-page class="relative-position">
       <!-- Header -->
-      <q-header class="bg-white text-grey-10">
+      <q-header class="body-bg text-grey-10">
 
          <slot name="toolbar">
             <toolbar-one />
