@@ -2,7 +2,10 @@
    <div id="toolbar_one" class="flex justify-between items-center full-width q-my-sm q-px-md">
       <!-- Prepend -->
       <div class="prepend-content">
-         <slot name="prepend" />
+         <slot name="prepend">
+            <q-icon v-if="canBack" @click="$router.back()" name="las la-angle-left" color="primary" size="25px" class="q-pr-sm" />
+            <back-btn v-if="backWithText" />
+         </slot>
       </div>
 
       <!-- Middle Input area -->
@@ -16,14 +19,28 @@
       <!-- Append -->
       <div class="append-content">
          <slot name="append">
-            <q-btn flat round dense color="primary" icon="las la-shopping-cart" class="q-ml-md" />
+            <q-btn to="/cart" flat round dense color="primary" icon="las la-shopping-cart" class="q-ml-md" />
          </slot>
       </div>
    </div>
 </template>
 
 <script>
+import BackBtn from 'components/buttons/BackBtn.vue'
 export default {
+   props: {
+      canBack: {
+         type: Boolean,
+         default: false
+      },
+      backWithText: {
+         type: Boolean,
+         default: false
+      }
+   },
+   components: {
+      BackBtn
+   },
    methods: {
       openSearchView() {
          this.$router.push('/search-view')

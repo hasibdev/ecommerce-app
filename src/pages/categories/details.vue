@@ -1,10 +1,7 @@
 <template>
    <app-layout>
       <template #toolbar>
-         <toolbar-one>
-            <template #prepend>
-               <back-btn />
-            </template>
+         <toolbar-one backWithText>
             <template #middle>
                <p class="text-center text-body1">Electronics</p>
             </template>
@@ -39,14 +36,13 @@
 
 import AppLayout from 'layouts/AppLayout.vue'
 import ToolbarOne from 'components/toolbars/ToolbarOne.vue'
-import BackBtn from 'components/buttons/BackBtn.vue'
 import ProductCard from 'components/ProductCard'
 
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
 export default {
    components: {
-      AppLayout, ToolbarOne, BackBtn, ProductCard, Swiper, SwiperSlide
+      AppLayout, ToolbarOne, ProductCard, Swiper, SwiperSlide
    },
    data() {
       return {

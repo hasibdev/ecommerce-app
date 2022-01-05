@@ -2,10 +2,10 @@
    <app-layout :footer="false">
       <!-- Toolbar -->
       <template #toolbar>
-         <toolbar-one>
-            <template #prepend>
+         <toolbar-one canBack>
+            <!-- <template #prepend>
                <q-icon @click="$router.back()" name="las la-angle-left" color="primary" size="25px" class="q-pr-sm" />
-            </template>
+            </template> -->
 
             <template #middle>
                <div class="text-center">
