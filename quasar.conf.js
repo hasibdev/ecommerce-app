@@ -79,7 +79,7 @@ module.exports = configure(function (ctx) {
       server: {
         type: 'http'
       },
-      port: process.env.PORT || 8080,
+      port: 8080,
       open: false // opens browser window automatically
     },
 
@@ -98,7 +98,7 @@ module.exports = configure(function (ctx) {
       // directives: [],
 
       // Quasar plugins
-      plugins: []
+      plugins: ['Dialog']
     },
 
     // animations: 'all', // --- includes all animations
