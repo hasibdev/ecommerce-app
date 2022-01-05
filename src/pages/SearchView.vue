@@ -10,7 +10,7 @@
             <template #middle>
                <div class="text-center">
                   <q-icon name="las la-search" color="grey-5" class="search-icon q-px-sm" />
-                  <input v-model="searchText" class="search-input" placeholder="Search" type="text">
+                  <input v-model="searchText" ref="searchInput" class="search-input" placeholder="Search" type="text">
                </div>
             </template>
             <!-- <template v-if="!searchText" #append>
@@ -115,7 +115,7 @@ export default {
       }
    },
    mounted() {
-      console.log('mounted')
+      this.$refs.searchInput.focus()
    }
 }
 </script>

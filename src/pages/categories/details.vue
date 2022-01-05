@@ -74,6 +74,7 @@ export default {
       border-radius: 18px;
       &.active {
          border-color: $primary;
+         font-weight: 500;
       }
    }
 }
