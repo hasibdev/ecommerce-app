@@ -36,3 +36,8 @@ input:focus {
 .custom-shadow {
    box-shadow: 0px 7px 15px #ddd;
 }
+
+// Override
+.q-field--outlined .q-field__control {
+   border-radius: 10px;
+}
