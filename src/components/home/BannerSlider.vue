@@ -1,5 +1,5 @@
 <template>
-   <div id="home-banner" class="q-mt-md">
+   <div class="q-mt-md swiper-wrapper">
       <swiper :slides-per-view="4" :pagination="{ 'clickable': true }" :mousewheel="true" :space-between="10">
          <swiper-slide v-for="(item, i) in items" :key="i">
             <div @click="$router.push(`/categories/${i}`)" class="text-center q-pb-xl">
@@ -41,17 +41,4 @@ export default {
 </script>
 
 <style lang="scss">
-#home-banner {
-   .q-carousel__navigation-icon--inactive {
-      opacity: 0.5 !important;
-   }
-   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-   .swiper-pagination-horizontal.swiper-pagination-bullets
-      .swiper-pagination-bullet {
-      margin: 0 8px;
-   }
-   .swiper-pagination-bullet-active {
-      background-color: $grey-10;
-   }
-}
 </style>

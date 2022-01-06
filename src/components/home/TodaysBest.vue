@@ -7,7 +7,7 @@
 
       <div class="row q-col-gutter-md">
          <div class="col-6" v-for="item in 4" :key="item">
-            <product-card name="Cafe Basilico" :price="32.50" :star="3.5" :reviews="1259" image="https://cdn.quasar.dev/img/chicken-salad.jpg" />
+            <product-card @click="$router.push(`/products/${item}`)" name="Cafe Basilico" :price="32.50" :star="3.5" :reviews="1259" image="https://cdn.quasar.dev/img/chicken-salad.jpg" />
          </div>
       </div>
    </div>

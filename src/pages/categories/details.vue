@@ -17,7 +17,7 @@
       <div id="category_slider">
          <swiper :slides-per-view="3.5" :freeMode="true" :mousewheel="true" :space-between="5">
             <swiper-slide v-for="(item, i) in items" :key="i">
-               <p class="text-item" :class="{active: i==0}">{{ item.title }}</p>
+               <p class="text-item" :class="{'active': i==0}">{{ item.title }}</p>
             </swiper-slide>
          </swiper>
       </div>
