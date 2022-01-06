@@ -15,6 +15,7 @@
       <!-- Main Content -->
       <div class="q-mt-md">
          <form class="q-mt-lg">
+            <!-- First and Last Name -->
             <div class="row q-col-gutter-sm">
                <div class="col">
                   <q-input outlined color="secondary" v-model="form.firstName" type="text" placeholder="First Name" input-class="text-body1" class="q-mb-md" />
@@ -23,8 +24,19 @@
                   <q-input outlined color="secondary" v-model="form.lastName" type="text" placeholder="Last Name" input-class="text-body1" class="q-mb-md" />
                </div>
             </div>
+            <!-- Mobile -->
+            <div class="row q-col-gutter-sm">
+               <div class="col-3">
+                  <q-select outlined v-model="mobileCode" :options="mobileOptions" :label="form.mobileCode" class="small-select-box" dropdown-icon="expand_more" />
+               </div>
+               <div class="col-9">
+                  <q-input outlined color="secondary" v-model="form.lastName" type="number" placeholder="Mobile Number" input-class="text-body1" class="q-mb-md" />
+               </div>
+            </div>
 
+            <!-- Email -->
             <q-input outlined color="secondary" v-model="form.email" type="email" placeholder="Email Address" input-class="text-body1" class="q-mb-md" />
+            <!-- Password -->
             <q-input outlined color="secondary" v-model="form.password" :type="passwordVisible?`text`:`password`" input-class="text-body1" placeholder="Password">
                <template #append>
                   <q-avatar @click="passwordVisible=!passwordVisible" :icon="passwordVisible?`visibility_off`:`visibility`" font-size="25px"></q-avatar>
@@ -64,13 +76,23 @@ export default {
             password: '',
             firstName: '',
             lastName: '',
-            mobile: ''
+            mobile: '',
+            mobileCode: '+880'
          },
-         passwordVisible: false
+         passwordVisible: false,
+         mobileOptions: ['+880', '+650', '+84']
       }
    }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.small-select-box {
+   .q-field__append.q-field__marginal {
+      padding-left: 0px !important;
+   }
+   .q-field__control {
+      padding: 0 7px !important;
+   }
+}
 </style>
