@@ -25,7 +25,7 @@
             </div>
             <!-- Empty cart footer -->
             <div v-else class="q-ma-md">
-               <q-btn rounded color="primary" class="full-width q-py-sm" label="Continue Shopping" />
+               <q-btn rounded to="/" color="primary" class="full-width q-py-sm" label="Continue Shopping" />
             </div>
          </q-footer>
       </template>
