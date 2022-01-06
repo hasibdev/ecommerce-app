@@ -12,6 +12,18 @@
 
          </toolbar-one>
       </template>
+      <!-- Footer -->
+      <template #footer>
+         <q-footer id="app_footer" class="bg-white text-grey-9">
+            <div class="flex justify-between items-center q-px-md q-my-lg">
+               <div>
+                  <p class="text-grey-6" style="font-size: 12px;">Total (3 Items)</p>
+                  <p class="text-bold text-body1">$490</p>
+               </div>
+               <q-btn rounded color="primary" class="q-px-xl q-py-sm">Buy Now</q-btn>
+            </div>
+         </q-footer>
+      </template>
 
       <!-- Main Content -->
       <!-- Check box -->

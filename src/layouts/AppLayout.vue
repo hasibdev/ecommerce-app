@@ -15,7 +15,9 @@
       </div>
 
       <!-- Footer -->
-      <app-footer v-if="footer" />
+      <slot name="footer">
+         <app-footer v-if="footer" />
+      </slot>
 
    </q-page>
 </template>
