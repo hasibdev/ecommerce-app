@@ -17,14 +17,9 @@
       <!-- Footer -->
       <template #footer>
          <q-footer class="bg-white text-grey-9">
-
-            <div v-if="true" class="flex justify-between items-center q-px-md q-my-lg">
+            <div class="flex justify-between items-center q-px-md q-my-lg">
                <q-btn dense outline color="primary" icon="las la-shopping-cart" class="q-pa-md round-10"></q-btn>
                <q-btn rounded color="primary" class="q-px-xl q-py-sm flex-1 q-ml-lg">Buy Now</q-btn>
-            </div>
-            <!-- Empty cart footer -->
-            <div v-else class="q-ma-md">
-               <q-btn rounded to="/" color="primary" class="full-width q-py-sm" label="Continue Shopping" />
             </div>
          </q-footer>
       </template>
@@ -39,14 +34,20 @@
       </div>
 
       <!-- Main Content -->
-      <div class="q-mt-lg">
+      <div class="q-mt-lg relative-position">
          <!-- Product details -->
-         <h5>Handphone</h5>
+         <h5 class="q-pr-lg">Handphone</h5>
          <h4 class="q-mt-sm">$234</h4>
          <!-- Ragings -->
          <div class="flex q-mt-sm">
             <q-rating :model-value="4" icon-half="star_half" :max="5" size="16px" color="secondary" />
             <span class="q-ml-sm" style="font-size: 12px;">562 Reviews</span>
+         </div>
+
+         <div class="floating-btn bg-white">
+            <span class="material-icons-outlined text-h5 q-pa-sm">
+               favorite_border
+            </span>
          </div>
       </div>
 
@@ -56,6 +57,7 @@
          <span class="second-range"></span>
          <span class="content">200 Sold</span>
       </div>
+
       <!-- Variant -->
       <div class="q-mt-md">
          <q-btn color="primary" class="q-pa-lg q-mr-sm round-10" />
@@ -116,5 +118,12 @@ export default {
       color: white;
       padding: 10px;
    }
+}
+
+// Floating Favourite Icon
+.floating-btn {
+   position: absolute;
+   top: 10px;
+   right: 0;
 }
 </style>
