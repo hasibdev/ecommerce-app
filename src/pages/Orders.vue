@@ -9,7 +9,7 @@
             <template #append>
                <div>
                   <q-btn flat round dense to="/cart" color="primary" icon="las la-shopping-cart" class="q-ml-md" />
-                  <q-btn flat round dense color="primary" icon="search" class="q-ml-md" to="/search-view" />
+                  <q-btn flat round dense color="primary" icon="las la-sms" class="q-ml-md" />
                </div>
             </template>
          </toolbar-one>

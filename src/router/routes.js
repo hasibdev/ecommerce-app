@@ -4,13 +4,13 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') },
-      { path: 'search-view', component: () => import('pages/SearchView.vue') },
-      { path: 'categories/:id', component: () => import('pages/categories/details.vue') },
-      { path: 'profile', component: () => import('pages/Profile.vue') },
-      { path: 'cart', component: () => import('pages/Cart.vue') },
-      { path: 'favourite', component: () => import('pages/Favourite.vue') },
-      { path: 'orders', component: () => import('pages/Orders.vue') }
+      { path: '', name: 'home', component: () => import('pages/Index.vue') },
+      { path: 'search-view', name: 'search-view', component: () => import('pages/SearchView.vue') },
+      { path: 'categories/:id', name: 'category-details', component: () => import('pages/categories/details.vue') },
+      { path: 'profile', name: 'profile', component: () => import('pages/Profile.vue') },
+      { path: 'cart', name: 'cart', component: () => import('pages/Cart.vue') },
+      { path: 'favourite', name: 'favourite', component: () => import('pages/Favourite.vue') },
+      { path: 'orders', name: 'orders', component: () => import('pages/Orders.vue') }
     ]
   },
 

@@ -2,7 +2,7 @@
    <q-footer id="app_footer" class="bg-white text-grey-9">
 
       <ul class="menu-list">
-         <li v-for="(item, i) in items" :key="i" @click="handleRoute(item)" :class="{active: item.active}">
+         <li v-for="(item, i) in items" :key="i" @click="handleRoute(item)" :class="{active: item.name == $route.name}">
             <q-icon :name="item.icon" size="25px" />
             <p class="q-mb-none">{{item.label}}</p>
          </li>
@@ -21,25 +21,25 @@ export default {
                label: "Home",
                icon: "home",
                to: '/',
-               active: true
+               name: 'home'
             },
             {
                label: "My Order",
                icon: "shopping_cart",
                to: '/orders',
-               active: false
+               name: 'orders'
             },
             {
                label: "Favourite",
                icon: "bookmark_border",
                to: '/favourite',
-               active: false
+               name: 'favourite'
             },
             {
                label: "Profile",
                icon: "account_circle",
                to: '/profile',
-               active: false
+               name: 'profile'
             }
          ]
       }
@@ -47,8 +47,6 @@ export default {
    methods: {
       handleRoute(item) {
          this.$router.push(item.to)
-         this.items = this.items.map(val => ({ ...val, active: false }))
-         item.active = true
       }
    }
 }
