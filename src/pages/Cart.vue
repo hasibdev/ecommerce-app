@@ -16,7 +16,7 @@
       <template #footer>
          <q-footer id="app_footer" class="bg-white text-grey-9">
 
-            <div v-if="false" class="flex justify-between items-center q-px-md q-my-lg">
+            <div v-if="true" class="flex justify-between items-center q-px-md q-my-lg">
                <div>
                   <p class="text-grey-6" style="font-size: 12px;">Total (3 Items)</p>
                   <p class="text-bold text-body1">$490</p>
@@ -31,7 +31,7 @@
       </template>
 
       <!-- Main Content -->
-      <section v-if="false">
+      <section v-if="true">
          <!-- Check box -->
          <div class="flex justify-between">
             <q-checkbox v-model="check1" label="Select All" />

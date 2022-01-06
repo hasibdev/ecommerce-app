@@ -26,7 +26,7 @@ export default {
             {
                label: "My Order",
                icon: "shopping_cart",
-               to: '/cart',
+               to: '/orders',
                active: false
             },
             {

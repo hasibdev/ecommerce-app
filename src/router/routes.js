@@ -9,7 +9,8 @@ const routes = [
       { path: 'categories/:id', component: () => import('pages/categories/details.vue') },
       { path: 'profile', component: () => import('pages/Profile.vue') },
       { path: 'cart', component: () => import('pages/Cart.vue') },
-      { path: 'favourite', component: () => import('pages/Favourite.vue') }
+      { path: 'favourite', component: () => import('pages/Favourite.vue') },
+      { path: 'orders', component: () => import('pages/Orders.vue') }
     ]
   },
 
