@@ -14,7 +14,22 @@
             </template>
          </toolbar-one>
       </template>
+      <!-- Footer -->
+      <template #footer>
+         <q-footer class="bg-white text-grey-9">
 
+            <div v-if="true" class="flex justify-between items-center q-px-md q-my-lg">
+               <q-btn dense outline color="primary" icon="las la-shopping-cart" class="q-pa-md round-10"></q-btn>
+               <q-btn rounded color="primary" class="q-px-xl q-py-sm flex-1 q-ml-lg">Buy Now</q-btn>
+            </div>
+            <!-- Empty cart footer -->
+            <div v-else class="q-ma-md">
+               <q-btn rounded to="/" color="primary" class="full-width q-py-sm" label="Continue Shopping" />
+            </div>
+         </q-footer>
+      </template>
+
+      <!-- Products Slider -->
       <div class="products-swiper">
          <swiper :pagination="{clickable: true}" :slides-per-view="1" :mousewheel="true">
             <swiper-slide v-for="(item, i) in 4" :key="i">
@@ -22,6 +37,39 @@
             </swiper-slide>
          </swiper>
       </div>
+
+      <!-- Main Content -->
+      <div class="q-mt-lg">
+         <!-- Product details -->
+         <h5>Handphone</h5>
+         <h4 class="q-mt-sm">$234</h4>
+         <!-- Ragings -->
+         <div class="flex q-mt-sm">
+            <q-rating :model-value="4" icon-half="star_half" :max="5" size="16px" color="secondary" />
+            <span class="q-ml-sm" style="font-size: 12px;">562 Reviews</span>
+         </div>
+      </div>
+
+      <!-- Sold range -->
+      <div class="sold-range q-mt-md">
+         <span class="first-range"></span>
+         <span class="second-range"></span>
+         <span class="content">200 Sold</span>
+      </div>
+      <!-- Variant -->
+      <div class="q-mt-md">
+         <q-btn color="primary" class="q-pa-lg q-mr-sm round-10" />
+         <q-btn color="secondary" class="q-pa-lg q-mr-sm round-10" />
+         <q-btn color="grey-6" class="q-pa-lg q-mr-sm round-10" />
+         <q-btn color="black" class="q-pa-lg q-mr-sm round-10" />
+      </div>
+
+      <!-- Description -->
+      <div class="q-mt-lg">
+         <p class="text-body1">Description Product</p>
+         <p class="text-grey-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+
    </app-layout>
 </template>
 
@@ -40,4 +88,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.sold-range {
+   position: relative;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   border-radius: 10px;
+   overflow: hidden;
+   .first-range,
+   .second-range {
+      position: absolute;
+      height: 100%;
+   }
+   .first-range {
+      background: $secondary;
+      width: 100%;
+      opacity: 0.3;
+   }
+   .second-range {
+      background: $primary;
+      width: 65%;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+   }
+   .content {
+      position: relative;
+      color: white;
+      padding: 10px;
+   }
+}
 </style>

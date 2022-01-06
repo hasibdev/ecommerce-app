@@ -8,6 +8,7 @@
             </div>
          </div>
 
+         <!-- Ragings -->
          <div class="flex justify-between">
             <q-rating :model-value="star" icon-half="star_half" :max="5" size="13px" color="secondary" />
             <span class="" style="font-size: 10px;">{{ reviews }} Reviews</span>
