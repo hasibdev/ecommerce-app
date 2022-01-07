@@ -1,5 +1,6 @@
 <template>
    <q-page class="relative-position">
+
       <!-- Header -->
       <q-header class="body-bg text-grey-10">
 
@@ -25,6 +26,7 @@
 <script>
 import ToolbarOne from 'components/toolbars/ToolbarOne.vue'
 import AppFooter from './AppFooter.vue'
+
 export default {
    components: { ToolbarOne, AppFooter },
    name: "app-layout",
