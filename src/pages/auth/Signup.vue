@@ -14,7 +14,7 @@
 
       <!-- Main Content -->
       <div class="q-mt-md">
-         <form class="q-mt-lg">
+         <form @submit.prevent="formSubmit" class="q-mt-lg">
             <!-- First and Last Name -->
             <div class="row q-col-gutter-sm">
                <div class="col">
@@ -81,6 +81,11 @@ export default {
          },
          passwordVisible: false,
          mobileOptions: ['+880', '+650', '+84']
+      }
+   },
+   methods: {
+      formSubmit() {
+         this.$router.push('/')
       }
    }
 }

@@ -20,7 +20,7 @@
             <p class="text-subtitle1 text-grey-7">Enter your e-mail account and password.</p>
          </div>
 
-         <form class="q-mt-lg">
+         <form @submit.prevent="formSubmit" class="q-mt-lg">
             <q-input outlined color="secondary" v-model="form.email" type="email" placeholder="Email Address" input-class="text-body1" class="q-mb-md" />
             <q-input outlined color="secondary" v-model="form.password" :type="passwordVisible?`text`:`password`" input-class="text-body1" placeholder="Password">
                <template #append>
@@ -32,7 +32,7 @@
                <p class="text-body2 q-ml-auto">Forgot Password?</p>
             </div>
 
-            <q-btn rounded no-caps size="lg" label="Login" color="primary" class="full-width q-mt-lg" />
+            <q-btn rounded no-caps type="submit" size="lg" label="Login" color="primary" class="full-width q-mt-lg" />
             <p class="text-grey-6 text-body1 text-center q-my-md">Or</p>
             <q-btn rounded outline no-caps size="lg" label="Continue With FB" color="primary" class="full-width" />
             <q-btn rounded outline no-caps size="lg" label="Continue With Google" color="primary" class="full-width q-mt-md" />
@@ -56,10 +56,15 @@ export default {
    data() {
       return {
          form: {
-            email: '',
-            password: ''
+            email: 'user@example.com',
+            password: '123456'
          },
          passwordVisible: false
+      }
+   },
+   methods: {
+      formSubmit() {
+         this.$router.push('/')
       }
    }
 }

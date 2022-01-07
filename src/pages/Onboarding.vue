@@ -22,7 +22,7 @@
          </swiper>
 
          <div class="q-mt-xl">
-            <q-btn rounded unelevated to="/" color="primary" label="Getting Started" size="lg" class="full-width" />
+            <q-btn rounded no-caps unelevated to="/signin" color="primary" label="Getting Started" size="lg" class="full-width" />
          </div>
       </div>
    </q-page>
