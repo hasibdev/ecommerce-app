@@ -40,5 +40,19 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+#onboarding_wraper {
+   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+   .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      margin: 0 8px;
+      transition: all 0.3s ease-in-out;
+   }
+
+   .swiper-pagination-bullet-active {
+      background-color: $primary;
+      width: 28px;
+      border-radius: 6px;
+   }
+}
 </style>
