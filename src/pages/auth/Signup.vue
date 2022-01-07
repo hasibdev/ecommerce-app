@@ -49,7 +49,7 @@
 
             <p class="text-grey-5 q-mt-md">By signing up for a Elektra account you are agreeing to our community Terms of service and privacy policy.</p>
 
-            <q-btn rounded no-caps size="lg" label="Login" color="primary" class="full-width q-mt-lg" />
+            <q-btn rounded no-caps size="lg" label="Sign Up" color="primary" class="full-width q-mt-lg" />
             <p class="text-grey-6 text-body1 text-center q-my-md">Or Sign up with</p>
             <q-btn rounded outline no-caps size="lg" label="Continue With FB" color="primary" class="full-width" />
             <q-btn rounded outline no-caps size="lg" label="Continue With Google" color="primary" class="full-width q-mt-md" />
