@@ -15,7 +15,7 @@ const routes = [
       { path: 'signin', name: 'signin', component: () => import('pages/auth/Signin.vue') },
       { path: 'signup', name: 'signup', component: () => import('pages/auth/Signup.vue') },
       { path: 'onboarding', name: 'onboarding', component: () => import('pages/Onboarding.vue') },
-      { path: 'checkout', name: 'checkout', component: () => import('pages/checkout/index.vue') }
+      { path: 'checkout', name: 'checkout', component: () => import('src/pages/Checkout.vue') }
     ]
   },
 
