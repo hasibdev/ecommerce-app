@@ -24,7 +24,7 @@
                   <p class="text-grey-6">Total</p>
                   <p class="text-bold text-body1">$490</p>
                </div>
-               <q-btn rounded color="primary" class="q-px-xl q-py-sm">Buy Now</q-btn>
+               <q-btn rounded unelevated color="primary" class="q-px-xl q-py-sm">Buy Now</q-btn>
             </div>
 
          </q-footer>

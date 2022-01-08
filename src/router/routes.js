@@ -16,7 +16,8 @@ const routes = [
       { path: 'signup', name: 'signup', component: () => import('pages/auth/Signup.vue') },
       { path: 'onboarding', name: 'onboarding', component: () => import('pages/Onboarding.vue') },
       { path: 'checkout', name: 'checkout', component: () => import('src/pages/Checkout.vue') },
-      { path: 'verification', name: 'verification', component: () => import('src/pages/Verification.vue') }
+      { path: 'verification', name: 'verification', component: () => import('src/pages/Verification.vue') },
+      { path: 'order-success', name: 'order-success', component: () => import('src/pages/OrderSuccess.vue') }
     ]
   },
 

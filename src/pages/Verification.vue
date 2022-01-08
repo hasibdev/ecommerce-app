@@ -12,8 +12,8 @@
       </template>
 
       <template #footer>
-         <q-footer class="bg-white text-grey-9 q-pa-md ">
-            <q-btn rounded color="primary" size="lg" class="q-px-xl q-py-sm full-width">Buy Now</q-btn>
+         <q-footer class="body-bg text-grey-9 q-pa-md ">
+            <q-btn rounded unelevated color="primary" size="lg" class="q-px-xl q-py-sm full-width">Buy Now</q-btn>
          </q-footer>
       </template>
 
