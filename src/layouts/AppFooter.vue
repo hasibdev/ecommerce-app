@@ -2,7 +2,7 @@
    <q-footer id="app_footer" class="bg-white text-grey-9">
 
       <ul class="menu-list">
-         <li v-for="(item, i) in items" :key="i" @click="handleRoute(item)" :class="{active: item.name == $route.name}">
+         <li v-for="(item, i) in items" :key="i" @click="handleRoute(item)" :class="{active: item.name == $route.name}" class="text-grey-7">
             <q-icon :name="item.icon" size="25px" />
             <p class="q-mb-none text-subtitle2">{{item.label}}</p>
          </li>

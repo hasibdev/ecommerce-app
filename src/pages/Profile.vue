@@ -3,7 +3,7 @@
       <template #toolbar>
          <toolbar-one canMessage>
             <template #middle>
-               <p class="text-center text-body1 text-bold q-ml-lg">Profile</p>
+               <p class="text-center text-body1 text-bold q-ml-xl">Profile</p>
             </template>
          </toolbar-one>
       </template>
