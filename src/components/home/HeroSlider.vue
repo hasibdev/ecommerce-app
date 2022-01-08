@@ -21,7 +21,7 @@
                   </div>
                   <div class="q-ml-sm">
                      <h6>$4,899</h6>
-                     <p>Balance</p>
+                     <p style="font-size: 12px;">Balance</p>
                   </div>
                </div>
             </div>
@@ -32,7 +32,7 @@
                   </div>
                   <div class="q-ml-sm">
                      <h6>12</h6>
-                     <p>Voucher Avilable</p>
+                     <p style="font-size: 12px;">Voucher Avilable</p>
                   </div>
                </div>
             </div>

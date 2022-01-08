@@ -47,7 +47,9 @@
 
                   <!-- Label -->
                   <q-item-section>
-                     <q-item-label>Headphone Joss</q-item-label>
+                     <q-item-label>
+                        <p class="text-body1">Headphone Joss</p>
+                     </q-item-label>
                      <q-item-label caption>
                         <p class="flex items-center" style="margin-top: 5px;">
                            <span class="bg-grey-14 inline-block rounded-borders" style="width:19px; height:19px;"></span>
