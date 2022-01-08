@@ -20,7 +20,7 @@
       <div class="append-content">
          <slot name="append">
             <q-btn to="/cart" flat round dense color="primary" icon="las la-shopping-cart" class="q-ml-md" />
-            <q-btn v-if="canMessage" flat round dense color="primary" icon="las la-sms" class="q-ml-sm" />
+            <q-btn @click="openMessage" v-if="canMessage" flat round dense color="primary" icon="las la-sms" class="q-ml-sm" />
          </slot>
       </div>
    </div>
@@ -28,6 +28,7 @@
 
 <script>
 import BackBtn from 'components/buttons/BackBtn.vue'
+import HelpChat from 'components/chat/HelpChat.vue'
 export default {
    props: {
       canBack: {
@@ -50,6 +51,11 @@ export default {
       openSearchView(e) {
          e.preventDefault()
          this.$router.push('/search-view')
+      },
+      openMessage(e) {
+         this.$q.dialog({
+            component: HelpChat
+         })
       }
    }
 }
