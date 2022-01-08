@@ -20,6 +20,7 @@
       <div class="append-content">
          <slot name="append">
             <q-btn to="/cart" flat round dense color="primary" icon="las la-shopping-cart" class="q-ml-md" />
+            <q-btn v-if="canMessage" flat round dense color="primary" icon="las la-sms" class="q-ml-sm" />
          </slot>
       </div>
    </div>
@@ -30,6 +31,10 @@ import BackBtn from 'components/buttons/BackBtn.vue'
 export default {
    props: {
       canBack: {
+         type: Boolean,
+         default: false
+      },
+      canMessage: {
          type: Boolean,
          default: false
       },

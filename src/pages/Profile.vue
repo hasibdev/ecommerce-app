@@ -1,7 +1,7 @@
 <template>
    <app-layout>
       <template #toolbar>
-         <toolbar-one>
+         <toolbar-one canMessage>
             <template #middle>
                <p class="text-center text-body1 text-bold q-ml-lg">Profile</p>
             </template>

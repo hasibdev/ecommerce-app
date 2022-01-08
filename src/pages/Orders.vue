@@ -2,15 +2,9 @@
    <app-layout>
       <!-- Toolbar setup -->
       <template #toolbar>
-         <toolbar-one>
+         <toolbar-one canMessage>
             <template #middle>
                <p class="text-body1">My Orders</p>
-            </template>
-            <template #append>
-               <div>
-                  <q-btn flat round dense to="/cart" color="primary" icon="las la-shopping-cart" class="q-ml-md" />
-                  <q-btn flat round dense color="primary" icon="las la-sms" class="q-ml-md" />
-               </div>
             </template>
          </toolbar-one>
       </template>
