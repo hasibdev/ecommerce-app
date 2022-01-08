@@ -62,9 +62,7 @@
          <div class="q-mt-lg">
             <div class="flex justify-between items-center">
                <h6>
-                  <span class="material-icons-outlined text-primary text-h5 q-mr-sm">
-                     map
-                  </span>
+                  <q-icon name="o_map" color="primary" size="md" />
                   Shipping Address
                </h6>
                <span class="text-primary">Edit</span>
@@ -81,7 +79,7 @@
          <div class="">
             <div class="flex justify-between items-center">
                <h6>
-                  <q-icon name="las la-truck" class="text-primary text-h5 q-mr-sm" />
+                  <q-icon name="las la-truck" size="md" class="text-primary q-mr-sm" />
                   Delivery Service
                </h6>
                <span class="text-primary">Edit</span>
@@ -96,7 +94,7 @@
 
          <div class="flex justify-between items-center">
             <h6>
-               <q-icon name="las la-credit-card" class="text-primary text-h5 q-mr-sm" />
+               <q-icon name="las la-credit-card" size="md" class="text-primary q-mr-sm" />
                Payment Methods
             </h6>
             <span class="text-primary">Edit</span>

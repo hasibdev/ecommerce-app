@@ -4,7 +4,7 @@
       <ul class="menu-list">
          <li v-for="(item, i) in items" :key="i" @click="handleRoute(item)" :class="{active: item.name == $route.name}">
             <q-icon :name="item.icon" size="25px" />
-            <p class="q-mb-none">{{item.label}}</p>
+            <p class="q-mb-none text-subtitle2">{{item.label}}</p>
          </li>
       </ul>
 
@@ -19,13 +19,13 @@ export default {
          items: [
             {
                label: "Home",
-               icon: "home",
+               icon: "o_home",
                to: '/',
                name: 'home'
             },
             {
                label: "My Order",
-               icon: "shopping_cart",
+               icon: "o_shopping_cart",
                to: '/orders',
                name: 'orders'
             },
@@ -37,7 +37,7 @@ export default {
             },
             {
                label: "Profile",
-               icon: "account_circle",
+               icon: "o_account_circle",
                to: '/profile',
                name: 'profile'
             }
