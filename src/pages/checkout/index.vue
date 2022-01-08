@@ -11,6 +11,25 @@
          </toolbar-one>
       </template>
 
+      <!-- Footer -->
+      <template #footer>
+         <q-footer id="app_footer" class="bg-white text-grey-9 q-pa-md ">
+            <div class="flex justify-between ">
+               <p class="text-body1 ">Sub total price</p>
+               <h6>$245</h6>
+            </div>
+
+            <div class="flex justify-between items-center q-mt-sm">
+               <div>
+                  <p class="text-grey-6">Total</p>
+                  <p class="text-bold text-body1">$490</p>
+               </div>
+               <q-btn rounded color="primary" class="q-px-xl q-py-sm">Buy Now</q-btn>
+            </div>
+
+         </q-footer>
+      </template>
+
       <!-- Main Content -->
       <div>
          <q-list>
@@ -52,26 +71,40 @@
             </div>
 
             <p class="text-bold text-body1 q-mt-md">Shoo Phar Nhoe</p>
-            <p class="text-grey-7 text-body1 q-mt-md">Planet Namex, 989 Warhammer Street</p>
+            <p class="text-grey-7 text-body1 q-mt-sm">Planet Namex, 989 Warhammer Street</p>
             <p class="text-grey-7 text-body1 q-mt-sm">(+78) 8989 8787</p>
          </div>
 
-         <q-separator />
+         <q-separator class="q-my-lg" />
 
          <!-- Delivery Service -->
-         <div class="q-mt-lg">
+         <div class="">
             <div class="flex justify-between items-center">
                <h6>
-                  <q-icon name="las la-truck" />
-                  Shipping Address
+                  <q-icon name="las la-truck" class="text-primary text-h5 q-mr-sm" />
+                  Delivery Service
                </h6>
                <span class="text-primary">Edit</span>
             </div>
 
-            <p class="text-bold text-body1 q-mt-md">Shoo Phar Nhoe</p>
-            <p class="text-grey-7 text-body1 q-mt-md">Planet Namex, 989 Warhammer Street</p>
-            <p class="text-grey-7 text-body1 q-mt-sm">(+78) 8989 8787</p>
+            <p class="text-bold text-body1 q-mt-md">Delivery Service</p>
+            <p class="text-grey-7 text-body1 q-mt-sm">FeedEx Reguler (3-4 days)</p>
+            <p class="text-grey-7 text-body1 q-mt-sm">$3.50</p>
          </div>
+
+         <q-separator class="q-my-lg" />
+
+         <div class="flex justify-between items-center">
+            <h6>
+               <q-icon name="las la-credit-card" class="text-primary text-h5 q-mr-sm" />
+               Payment Methods
+            </h6>
+            <span class="text-primary">Edit</span>
+         </div>
+
+         <h6>E-Wallet</h6>
+
+         <q-separator class="q-my-lg" />
 
       </div>
    </app-layout>
