@@ -28,7 +28,7 @@
 
 <script>
 import BackBtn from 'components/buttons/BackBtn.vue'
-import HelpChat from 'components/chat/HelpChat.vue'
+import HelpChat from 'components/modals/HelpChat.vue'
 export default {
    props: {
       canBack: {
