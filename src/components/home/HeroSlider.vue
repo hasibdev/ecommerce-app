@@ -3,7 +3,7 @@
       <q-carousel navigation autoplay swipeable infinite v-model="slide" height="230px" transition-prev="slide-right" transition-next="slide-left" animated control-color="grey-10" class="rounded-borders">
 
          <q-carousel-slide v-for="(item, i) in items" :key="i" :name="i" :img-src="item.file.path" class="column no-wrap">
-            <div class="q-mt-md">
+            <div class="q-mt-md slide-content">
                <h5 class="text-bold q-mb-sm text-grey-3">{{item.caption_1}}</h5>
                <p class="q-pr-xl text-body1 text-grey-5">{{item.caption_2}}</p>
                <q-btn color="orange-7" :label="item.call_to_action_text" class="q-mt-lg" />
@@ -75,6 +75,8 @@ export default {
    }
    .q-carousel__navigation--bottom {
       bottom: 15px;
+   }
+   .slide-content {
    }
    .q-carousel__navigation-icon--active {
       color: #000 !important;
