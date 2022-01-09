@@ -26,14 +26,6 @@ export default defineComponent({
          heroSlider: null,
          loading: false
       }
-   },
-   async created() {
-      try {
-         const sliders = await this.$api.get('/sliders')
-         console.log(sliders)
-      } catch (error) {
-         console.log(error)
-      }
    }
 })
 </script>

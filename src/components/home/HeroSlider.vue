@@ -2,11 +2,11 @@
    <div id="home-hero">
       <q-carousel navigation autoplay swipeable infinite v-model="slide" height="230px" transition-prev="slide-right" transition-next="slide-left" animated control-color="grey-10" class="rounded-borders">
 
-         <q-carousel-slide v-for="(item, i) in items" :key="i" :name="i" :img-src="item.image" class="column no-wrap  ">
+         <q-carousel-slide v-for="(item, i) in items" :key="i" :name="i" :img-src="item.file.path" class="column no-wrap">
             <div class="q-mt-md">
-               <h5 class="text-bold q-mb-sm text-grey-3">{{item.title}}</h5>
-               <p class="q-pr-xl text-body1 text-grey-5">{{item.subtitle}}</p>
-               <q-btn color="orange-7" label="Shop Now" class="q-mt-lg" />
+               <h5 class="text-bold q-mb-sm text-grey-3">{{item.caption_1}}</h5>
+               <p class="q-pr-xl text-body1 text-grey-5">{{item.caption_2}}</p>
+               <q-btn color="orange-7" :label="item.call_to_action_text" class="q-mt-lg" />
             </div>
          </q-carousel-slide>
 
@@ -46,12 +46,15 @@ export default {
    data() {
       return {
          slide: 0,
-         items: [
-            { title: 'Collection! Air More Uptempo', subtitle: 'New Arivals', image: 'http://phplaravel-692081-2338552.cloudwaysapps.com/storage/media/GQ6ry3XUj0akdpG1E1efXJDzoKSHX0UU6eR9bQeH.jpeg' },
-            { title: 'Collection! Air More Uptempo', subtitle: 'New Arivals', image: 'http://phplaravel-692081-2338552.cloudwaysapps.com/storage/media/GQ6ry3XUj0akdpG1E1efXJDzoKSHX0UU6eR9bQeH.jpeg' },
-            { title: 'Collection! Air More Uptempo', subtitle: 'New Arivals', image: 'http://phplaravel-692081-2338552.cloudwaysapps.com/storage/media/GQ6ry3XUj0akdpG1E1efXJDzoKSHX0UU6eR9bQeH.jpeg' },
-            { title: 'Collection! Air More Uptempo', subtitle: 'New Arivals', image: 'http://phplaravel-692081-2338552.cloudwaysapps.com/storage/media/GQ6ry3XUj0akdpG1E1efXJDzoKSHX0UU6eR9bQeH.jpeg' }
-         ]
+         items: []
+      }
+   },
+   async created() {
+      try {
+         const resSliders = await this.$api.get('/sliders')
+         this.items = resSliders.data.slides
+      } catch (error) {
+         console.log(error)
       }
    }
 }
