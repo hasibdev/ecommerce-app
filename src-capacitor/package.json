@@ -1,0 +1,12 @@
+{
+  "name": "ecommerce-app",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "author": "hasibdev <79460308+hasibdev@users.noreply.github.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^2.5.0",
+    "@capacitor/cli": "^2.0.0",
+    "@capacitor/core": "^2.0.0"
+  }
+}

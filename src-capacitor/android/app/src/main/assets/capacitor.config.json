@@ -1,0 +1,10 @@
+{
+  "appId": "galaxytelecom.fr.app",
+  "appName": "Quasar App",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "server": {
+    "url": "http://172.22.112.1:8080"
+  }
+}
