@@ -18,6 +18,15 @@ import ProductCard from 'components/ProductCard'
 export default {
    components: {
       ProductCard
+   },
+   data() {
+      return {
+         items: []
+      }
+   },
+   async created() {
+      const res = await this.$api('/vertical-products/2')
+      console.log(res)
    }
 }
 </script>
