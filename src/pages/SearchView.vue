@@ -86,7 +86,7 @@
             </p>
             <div>
                <q-icon name="las la-bars" size="25px" class="text-bold" />
-               <q-icon name="las la-sliders-h" size="25px" class="text-bold q-ml-sm" />
+               <q-icon @click="openFilter" name="las la-sliders-h" size="25px" class="text-bold q-ml-sm" />
             </div>
          </div>
 
@@ -116,6 +116,11 @@ export default {
    },
    mounted() {
       this.$refs.searchInput.focus()
+   },
+   methods: {
+      openFilter() {
+         console.log('open')
+      }
    }
 }
 </script>

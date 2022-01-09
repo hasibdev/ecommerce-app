@@ -63,9 +63,9 @@ export default {
    margin: 0;
    li {
       text-align: center;
-
+      transition: 0.2s ease-in-out;
       &.active {
-         color: $primary;
+         color: $primary !important;
       }
    }
 }
