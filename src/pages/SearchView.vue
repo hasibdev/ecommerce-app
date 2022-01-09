@@ -85,8 +85,8 @@
                <q-icon name="las la-angle-down" />
             </p>
             <div>
-               <q-icon name="las la-bars" size="25px" class="text-bold" />
-               <q-icon @click="openFilter" name="las la-sliders-h" size="25px" class="text-bold q-ml-sm" />
+               <q-icon name="las la-bars" size="25px" class="text-bold text-grey-8" />
+               <q-icon @click="openFilter" name="las la-sliders-h" size="25px" class="text-bold text-grey-8 q-ml-sm" />
             </div>
          </div>
 
@@ -105,6 +105,7 @@
 import ProductCard from 'components/ProductCard'
 import AppLayout from 'layouts/AppLayout.vue'
 import ToolbarOne from 'components/toolbars/ToolbarOne.vue'
+import SearchFilter from 'components/modals/SearchFilter.vue'
 export default {
    components: {
       AppLayout, ToolbarOne, ProductCard
@@ -119,7 +120,7 @@ export default {
    },
    methods: {
       openFilter() {
-         console.log('open')
+         this.$q.dialog({ component: SearchFilter })
       }
    }
 }
