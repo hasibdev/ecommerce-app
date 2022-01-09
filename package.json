@@ -11,6 +11,7 @@
     "build": "quasar build"
   },
   "dependencies": {
+    "@capacitor/core": "^3.3.4",
     "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
